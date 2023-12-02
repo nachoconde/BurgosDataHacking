@@ -1,0 +1,82 @@
+# =================================================
+# Configuración para text_extractor.py
+# =================================================
+
+burgosConectaRSS:
+  ingest: True
+  jsonl_file: datahacking/data/dataBConectaRSS.jsonl
+  type: rss
+  src: 'BurgosConecta'
+  urls:
+    - link: https://www.burgosconecta.es/rss/2.0/?section=economia/autonomos
+      name: burgosConectaAutonomos
+      rss_file: datahacking/rss/burgosConectaAutonomos.xml
+    - link: https://www.burgosconecta.es/rss/2.0/?section=economia/empresas
+      name: burgosConectaAutonomosEmpresas
+      rss_file: datahacking/rss/burgosConectaAutonomosEmpresas.xml
+    - link: https://www.burgosconecta.es/rss/2.0/?section=economia/fiscalidad
+      name: burgosConectaFiscalidad
+      rss_file: datahacking/rss/burgosConectaFiscalidad.xml
+    - link: https://www.burgosconecta.es/rss/2.0/?section=economia/trabajo
+      name: burgosConectaTrabajo
+      rss_file: datahacking/rss/burgosConectaTrabajo.xml
+    - link: https://www.burgosconecta.es/rss/2.0/?section=economia/mercados
+      name: burgosConectaMercados
+      rss_file: datahacking/rss/burgosConectaMercados.xml
+    - link: https://www.burgosconecta.es/rss/2.0/?section=burgos
+      name: burgosConectaBurgos
+      rss_file: datahacking/rss/burgosConectaBurgos.xml
+
+SEPE:
+  ingest: True
+  jsonl_file: datahacking/data/dataSEPE.jsonl
+  type: pdf
+  src: 'SEPE'
+  urls:
+    - link: https://sepe.es/SiteSepe/contenidos/que_es_el_sepe/publicaciones/pdf/pdf_mercado_trabajo/2023/IMT-Provincial/09-IMT-Burgos-2023--Datos2022-.pdf
+      name: IMT-Provincial-2023.pdf
+
+PoloPositivo:
+  ingest: True
+  jsonl_file: datahacking/data/dataPoloPositivo.jsonl
+  type: articles
+  src: 'PoloPositivo'
+  newsclass: 'text-white entry-title'
+  paragraph_class: ''
+  urls:
+    - link: https://polopositivo.es/noticias/page/
+      name: polopositivo
+      paginas: 2
+
+DiarioDeBurgos:
+  ingest: True
+  jsonl_file: datahacking/data/dataDiarioDeBurgos.jsonl
+  type: articles
+  src: 'DiarioDeBurgos'
+  paragraph_class:
+  urls:
+    - link: https://www.diariodeburgos.es/seccion/econom%C3%ADa/econom%C3%ADa/region?p=
+      name: DiarioDeBurgosEconomia
+      paginas: 2
+
+elcorreodeburgos:
+  ingest: True
+  jsonl_file: datahacking/data/dataelcorreodeburgos.jsonl
+  type: articles
+  src: 'ElCorreodeBurgos'
+  paragraph_class: 'paragraph'
+  urls:
+    - link: https://www.elcorreodeburgos.com/burgos/
+      name: elcorreodeburgos
+      paginas: 2
+
+burgosConectaNews:
+  ingest: True
+  jsonl_file: datahacking/data/dataBConectaNews.jsonl
+  type: articles
+  src: 'BurgosConecta'
+  paragraph_class: 'v-d v-d--ab-c v-d--bs'
+  urls:
+    - link: https://www.burgosconecta.es/burgos/pagina-
+      name: burgosConectaBurgos
+      paginas: 2
