@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "datahacking"
+version = "0.1.0"
+description = ""
+authors = ["nachoconde <nachok@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
