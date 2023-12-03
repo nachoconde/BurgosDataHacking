@@ -4,6 +4,8 @@
 
 This project delivers a solution for the Datathon organized in Burgos by the Google Developer Group. The challenge was to extract valuable information from any public data source and process it to understand the current status of one or several observatory objectives.
 
+![Overview](./images/RAG.png)
+
 ## Data Sources
 
 Data can be sourced from various public platforms such as press releases, official state bulletins, ministries, Castilla y León regional government, county council, city hall, INE (National Institute of Statistics), CEOE (Spanish Confederation of Employers' Organizations), unions, Social Security, etc.
